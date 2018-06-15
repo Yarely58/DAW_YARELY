@@ -40,5 +40,19 @@
 <script src="bower_components\jquery\dist\jquery.js"> </script>
 <!-- Se agrega la liberia de boostrtap js -->
 <script src="bower_components\boostrap\dist\js\bootstrap.js"></script>
+<script src="bower_components\hammerjs\hammer.js"></script>
+<script>
+var $body =document.body;
+  var hammertime = new Hammer($body);
+  hammertime.on('swipeleft', function(ev) {
+  console.log(ev);
+  });
+
+  var hammertime = new Hammer($body);
+  hammertime.on('swiperight', function(ev) {
+  console.log(ev);
+  });
+</script>
+
 </body>
 </html>
