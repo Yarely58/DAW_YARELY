@@ -7,12 +7,14 @@
   <!-- Se agrega la libreria de boostrtap para el estilo -->
   <link rel="stylesheet" href="bower_components\boostrap\dist\css\bootstrap.css">
   <!-- Se agrega la libreria de Iconos -->
-  <link rel="stylesheet" href="bower_components\fontawesome\web-fonts-with-css\css\fontawesome.css">
+  <link rel="stylesheet" href="bower_components\fontawesome\web-fonts-with-css\css\fontawesome-all.css">
+  <!--Se agregan estilos personalizados -->
+  <link rel="stylesheet" href="css\styles.css">
     <title>Document</title>
 </head>
 <body>
 <!--aqui va la barra de navegación-->
-<nav class="navbar navbar-expand-md navbar-light fixed-top ">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
   <a href="index.html" class="navbar-brand"> Logo de la compañia </a>
   <button class="navbar-toggler" data-toggle="collapse" data-target="#navegar">
     <span class="navbar-toggler-icon"></span>
@@ -32,6 +34,89 @@
   </div>
 </nav>
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+        <h1>Featured Product </h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      <div class="btn-group btn-group-lg">
+        <button class="btn btn-info">Buy Now!</button>
+        <button class="btn btn-default">Free Trail</button>
+      </div>
+      <p><a href="#">Read more about the product</a></p>
+    </div>
+    <div class="col-md-8 d-none d-sm-block">
+        <img src="img\pp.jpg" alt="" with="1050px" height="200px">
+    </div>
+  </div>
+  <hr>
+
+  <div class="row">
+      <div class="col-md-8">
+    <h3>The Company </h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab laborum animi, obcaecati earum, deserunt expedita. Facilis molestiae laborum molestias sit, quisquam excepturi aliquid dolorum numquam! Natus, fugiat suscipit fugit possimus nobis quaerat magni placeat voluptate adipisci deserunt, officia, iste tempora illo in expedita perferendis debitis veritatis quia. Et laborum labore id soluta animi odio temporibus, enim, rem quos, assumenda accusantium.</p>
+    </div>
+    <div class="col-md-4">
+      <p class="bg-light rounded lead text-center p-md-5 m-md-3"> Our Motto</p>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <h3>Testimonials</h3>
+    <div class="col-md-12 text-center">
+      <div class="carousel slide"id="carouselTestimonions" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <blockquote class="blockquote">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Eius esse, officiis provident harum libero dicta inventore? Fuga vero magnam, minima?</p>
+                 <footer class="blockquote-footer">
+                  Carlos Rivera
+                 </footer>
+            </blockquote> <!-- Para una nota -->
+              </div>
+              <div class="carousel-item">
+                <blockquote class="blockquote">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Eius esse, officiis provident harum libero dicta inventore? Fuga vero magnam, minima?</p>
+                     <footer class="blockquote-footer">
+                       Melendi
+                     </footer>
+                </blockquote> <!-- Para una nota -->
+                  </div>
+                  <div class="carousel-item">
+                    <blockquote class="blockquote">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                         Eius esse, officiis provident harum libero dicta inventore? Fuga vero magnam, minima?</p>
+                         <footer class="blockquote-footer">
+                          Ozuna
+                         </footer>
+                    </blockquote> <!-- Para una nota -->
+                      </div>
+        </div>
+        <!-- /.carousel-inner -->
+      </div>
+    </div>
+    <!-- /.col-md-12 text-center -->
+
+  </div>
+  <hr>
+  <div class="footer ">
+    <p class="text-center lead">
+      Wanna get in touch? Email us at adriz.orea5812@gmail.com
+    </p>
+    <hr>
+    <ul class="list-unstyled text-center">
+      <li class="list-inline-item"><a href=""><i class="fab fa-twitter fa-3x"></i></a></li>
+      <li class="list-inline-item"><a href=""><i class="fab fa-facebook-square fa-3x"></i></a></li>
+      <li class="list-inline-item"><a href=""><i class="fab fa-linkedin fa-3x"></i></a></li>
+    </ul>
+    <!-- /.list-unstyled -->
+  </div>
+  <!-- /.footer -->
+</div>
+
+
 
 
 
@@ -47,12 +132,10 @@ var $body =document.body;
   hammertime.on('swipeleft', function(ev) {
   console.log(ev);
   });
-
   var hammertime = new Hammer($body);
   hammertime.on('swiperight', function(ev) {
   console.log(ev);
   });
 </script>
-
 </body>
 </html>
